@@ -1,0 +1,322 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    padding: 4rem 0 0;
+
+    .card {
+        padding: 2rem 0 2rem;
+        width: 100%;
+        gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-between;
+
+
+        .card1 {
+            overflow: hidden;
+            background: rgb(230, 187, 187);
+            border-radius: 20px 0 20px 0;
+            padding: 5rem 3rem 5rem;
+            rotate: 2deg;
+            z-index: 2;
+
+            .img {
+                position: absolute;
+                height: 100px;
+                width: 110px;
+                right: 0;
+                bottom: 0;
+                margin: 1rem;
+
+            }
+
+            h1 {
+                rotate: -2deg;
+                font-size: 30px;
+                color: var(--blackColor);
+            }
+        }
+
+
+        .card2 {
+            overflow: hidden;
+            background: rgb(186, 174, 241);
+            border-radius: 20px 0 20px 0;
+            padding: 3rem 3rem 3rem;
+            rotate: 2deg;
+            margin-left: -90px;
+            z-index: 5;
+
+
+            p {
+                rotate: -2deg;
+                font-size: 16px;
+                color: var(--textColor);
+            }
+        }
+    }
+}
+
+
+.main-1 {
+    width: 100%;
+
+
+
+    .svg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem;
+            background: lightblue;
+            width: 98%;
+            rotate: 2deg;
+
+
+            .text {
+                width: 50%
+            }
+
+            .gift {
+                position: relative;
+                height: 150px;
+                width: 150px;
+                top: 0;
+                left: 20%;
+                box-shadow: 0 20px 10px grey;
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            h1 {
+                font-size: 32px;
+                padding: 0 0 1rem;
+                rotate: -2deg;
+                color: #2a90bf;
+
+            }
+
+            p {
+                font-size: 18px;
+                rotate: -2deg;
+                color: var(--blackColor);
+            }
+        }
+    }
+
+}
+
+.main-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 0px 0px 2rem;
+
+
+    .left {
+        background-color: rgb(202, 162, 212);
+        overflow: hidden;
+        padding: 5rem 2rem;
+        border-radius: 8px 50px;
+        margin-bottom: -190px;
+        height: 220px;
+    }
+
+
+
+    .right {
+        background-color: rgb(162, 200, 212);
+        overflow: hidden;
+        padding: 5rem 2rem;
+        border-radius: 8px 50px;
+        z-index: 5;
+        margin-top: -190px;
+        width: 90%;
+
+        h1 {
+            color: rgba(1, 1, 112, 0.829);
+            font-size: 32px;
+        }
+
+        p {
+            color: var(--textColor);
+            font-size: 18px;
+        }
+    }
+
+
+
+    .nathing {
+        background-color: rgb(0, 190, 248);
+        overflow: hidden;
+        padding: 6rem 2rem;
+        border-radius: 8px 50px;
+        width: 95%;
+        height: 220px;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    .main {
+        .card {
+            grid-template-columns: repeat(1, 1fr);
+            width: 95%;
+            gap: 1rem;
+
+            .card2 {
+                margin-left: unset;
+            }
+        }
+    }
+
+    .main-1 {
+        width: 100%;
+
+        .svg {
+            width: 100%;
+
+            .body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 3rem;
+                text-align: center;
+
+                h1 {
+                    font-size: 23px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+
+    .main-2 {
+        .basic-course {
+            .left {
+                margin-bottom: -190px;
+
+            }
+
+            .right {
+                width: 80%;
+                padding: 3rem 2rem;
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .nathing {
+                width: 90%;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:500px) {
+    .main {
+        .card {
+            grid-template-columns: repeat(1, 1fr);
+            width: 99%;
+            gap: 1rem;
+
+            .card2 {
+                margin-left: unset;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:660px) {
+    .main {
+        .card {
+            grid-template-columns: repeat(1, 1fr);
+            width: 99%;
+            gap: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width:840px) {
+    .main {
+        .card {
+            grid-template-columns: repeat(2, 1fr);
+            width: 99%;
+            gap: 1rem;
+        }
+    }
+
+    .main-1 {
+        .body {
+            .gift {
+                left: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .main {
+        .card {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            gap: 1rem;
+        }
+    }
+
+    .main-1 {
+        .body {
+            .gift {
+                left: 70%;
+            }
+        }
+    }
+}

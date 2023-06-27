@@ -1,0 +1,224 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+
+.home {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    padding: 3rem 0 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+
+
+    .img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    .overlap {
+        width: 100%;
+        padding: 11rem 0 11rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: auto;
+        z-index: 2;
+
+
+        .headerr {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+
+
+            small {
+                font-size: 15px;
+                color: rgb(138, 135, 135);
+            }
+
+            h1 {
+                position: relative;
+                width: max-content;
+                color: var(--textColor);
+                margin: 1rem 0;
+                z-index: 2;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background: var(--SecondaryColor);
+                    height: 5px;
+                    width: 308px;
+                    right: 0;
+                    bottom: 2px;
+                    z-index: -1;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                color: var(--textColor);
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    .home {
+        .overlap {
+            width: 100%;
+            padding: 11rem 0 11rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+
+            .headerr {
+                width: 100%;
+
+                small {
+                    font-size: 14px;
+                    color: rgb(138, 135, 135);
+                }
+
+                h1 {
+                    color: var(--textColor);
+                    margin: 1rem 0;
+                    z-index: 2;
+                    font-size: 1.3rem;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        background: var(--SecondaryColor);
+                        height: 5px;
+                        width: 268px;
+                        right: 0;
+                        bottom: 2px;
+                        z-index: -1;
+                    }
+                }
+
+
+                p {
+                    font-size: 13px;
+                    color: rgb(82, 80, 80);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:660px) {
+    .home {
+        .overlap {
+            .headerr {
+                h1 {
+                    position: relative;
+                    width: max-content;
+                    color: var(--textColor);
+                    margin: 1rem 0;
+                    z-index: 2;
+
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        background: var(--SecondaryColor);
+                        height: 5px;
+                        width: 308px;
+                        right: 0;
+                        bottom: 2px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:840px) {
+    .home {
+        .overlap {
+            .headerr {
+                h1 {
+                    position: relative;
+                    width: max-content;
+                    color: var(--textColor);
+                    margin: 1rem 0;
+                    z-index: 2;
+
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        background: var(--SecondaryColor);
+                        height: 5px;
+                        width: 308px;
+                        right: 0;
+                        bottom: 2px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width:1240px) {
+    .home {
+        .overlap {
+            .headerr {
+                h1 {
+                    position: relative;
+                    width: max-content;
+                    color: var(--textColor);
+                    margin: 1rem 0;
+                    z-index: 2;
+
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        background: var(--SecondaryColor);
+                        height: 5px;
+                        width: 308px;
+                        right: 0;
+                        bottom: 2px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
